@@ -7,7 +7,7 @@ export const Layout = ({ children }) => {
       <header className='mx-6 md:max-w-2xl md:mx-auto'>
         <Nav />
       </header>
-      <main>{children}</main>
+      <main className='container'>{children}</main>
       <Footer />
     </>
   );

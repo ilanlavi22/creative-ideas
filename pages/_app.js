@@ -7,7 +7,7 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return (
     <UserProvider>
-      <Layout>
+      <Layout className='container'>
         <ToastContainer
           limit={1}
           transition={Bounce}

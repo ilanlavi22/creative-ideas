@@ -7,7 +7,7 @@ const Nav = () => {
   const { user } = useContext(UserContext);
 
   return (
-    <nav className='flex justify-between items-center py-10 font-josefin'>
+    <nav className='flex flex-col justify-between items-center py-10 font-josefin sm:flex-row'>
       <Link href='/'>
         <button className='text-lg font-medium'>Creative Ideas</button>
       </Link>
@@ -21,7 +21,7 @@ const Nav = () => {
         )) || (
           <div className='flex items-center gap-6'>
             <Link href='/post'>
-              <button className='font-medium bg-cyan-500 text-white py-2 px-4 rounded-mg text-sm'>
+              <button className='font-medium bg-cyan-500 text-white py-2 px-4 rounded-mg text-sm hover:bg-cyan-900 duration-150'>
                 Post
               </button>
             </Link>
